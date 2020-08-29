@@ -1,0 +1,536 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    overflow: hidden;
+    height: auto;
+}
+
+.topImage{
+    background-image: url(../img/office.png);
+    background-size: cover;
+    background-position: left -150px;
+    background-repeat: no-repeat;
+    height: 70vh;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    letter-spacing: 1em;
+    position: relative;
+}
+
+.topImage h1{
+    background-color: white;
+    color: black;
+    font-size: 2.2vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+.topImage h3{
+    font-size: 1.3vw;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+}
+
+.know{
+    height: 12%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#know{
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 125px;
+    padding: 8px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#know:hover{
+    background-color: white;
+    color: black;
+}
+/* ---------------------------推薦-------------------------- */
+.recommend{
+    height: auto;
+    padding-top: 25px;
+    background-color: white;
+}
+
+.text{
+    height: 50px;
+    text-align: center;
+}
+
+.reTop,.reDown{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    height: 300px;
+    perspective: 1000px;
+    flex: none;
+    margin:0 30px 50px;
+    position: relative;
+}
+
+#medal{
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    z-index: 1;
+    transform: rotate(335deg);
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+.flip-card-back {
+    background-color: #f1e0e0;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+    padding-top: 40px;
+    position: relative;
+  }
+
+.flip-card-back h1{
+    font-size: 25px;
+}
+
+.flip-card-back a{
+    text-decoration: none;
+    background-color: rgb(85, 68, 56);
+    color: white;
+    padding: 15px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+}
+
+.flip-card-back a:hover{
+    background-color: rgb(199, 175, 157);
+    color: #000;
+}
+
+#flip-card1,#flip-card1 img{
+    width: 450px;
+    height: 300px;
+}
+
+#flip-card2,#flip-card2 img{
+    width: 400px;
+    height: 300px;
+}
+
+#flip-card3,#flip-card3 img{
+    width: 300px;
+    height: 300px;
+}
+
+#flip-card4,#flip-card4 img{
+    width: 400px;
+    height: 300px;
+}
+
+#flip-card5,#flip-card5 img{
+    width: 300px;
+    height: 300px;
+}
+
+#flip-card6,#flip-card6 img{
+    width: 450px;
+    height: 300px;
+}
+
+.star{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.checked {
+    color: rgb(207, 82, 82);
+  }
+
+  .checked_half{
+    display: inline-block;
+    background: linear-gradient(to right,rgb(207, 82, 82) 50%,black 50%);
+    color:transparent;
+    -webkit-background-clip: text;
+}
+
+/* ----------------------------分類--------------------------- */
+
+.tripleBox{
+    height: auto;
+    margin: 50px 0 0;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/laptop.png);
+    background-size: cover;
+    background-position: left -100px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 1.5em;
+    flex: none;
+    position: relative;
+    border-radius: 150px;
+    background-color: rgb(255, 255, 255,0.9);
+    border: 2px solid #a38767;
+    box-shadow: 0 0 0 10px rgb(255, 255, 255,0.9);
+}
+
+#box2{
+    background-color: rgb(255, 255, 255,0.93);
+    box-shadow: 0 0 0 10px rgb(255, 255, 255,0.93);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a38767;
+}
+
+.overlay p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.box:hover .overlay{
+    opacity: 0.9;
+    border-radius: 150px;
+}
+
+.box h1{
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 150px;
+    color: rgb(0, 0, 0);
+}
+
+.box img{
+    margin-top: 70px;
+}
+
+#img2{
+    margin-top: 50px;
+}
+
+/* -------------------------------防疫------------------------- */
+.disease{
+    height: 100vh;
+    position: relative;
+    background-color: rgb(243, 239, 233);
+    margin: 0 auto;
+}
+
+.disease h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    background-color: ;
+}
+
+.disease img{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.color_left{
+    background-color: rgb(255, 254, 254);
+    float: left;
+    height: 100vh;
+    width: 20%;
+    position: relative;
+}
+
+.color_left img{
+    position: absolute;
+    top: 5%;
+    left: 25px;
+}
+
+.color_left img:nth-of-type(2){
+    position: absolute;
+    top: 35%;
+    left: 25px;
+}
+
+.color_left img:nth-of-type(3){
+    position: absolute;
+    top: 65%;
+    left: 25px;
+}
+
+
+.slideshow-container {
+    width: 60%;
+    position: relative;
+    background: #ebf0ecf1;
+    top: 10vh;
+    left: 22vw;
+    margin-left: 100px;
+    box-shadow: 10px 10px 2px  #cccccc;
+  }
+  
+.mySlides {
+    display: none;
+    padding: 200px 120px;
+    text-align: center;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev{
+    position: absolute;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+  
+.dot-container {
+      width: 60%;
+      text-align: center;
+      padding: 20px;
+      background: #556459f1;
+      position: relative;
+      top: 10vh;
+      left: 22vw;
+      margin-left: 100px;
+      box-shadow: 10px 10px 2px  #cccccc;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #53463e;
+} 
+
+q {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 40%;
+}
+  
+footer{
+    background-color: rgb(65, 56, 49);
+    color: white;
+    height: 200px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:80px ;
+}
+/* ------------------------------RWD---------------------------- */
+@media screen and (max-width:1200px){
+    .tripleBox{
+        text-align: center;
+    }
+
+    #flip-card1,#flip-card2,#flip-card3,#flip-card4,#flip-card5,
+    #flip-card6,#flip-card1 img,#flip-card2 img,#flip-card3 img,#flip-card4
+    img,#flip-card5 img,#flip-card6 img{
+        width: 275px;
+    }
+
+    .slideshow-container{
+        top: 5vh;
+        left: 18vw;
+    }
+
+    .mySlides{
+        padding:150px 120px;
+    }
+
+    .dot-container{
+        top:5vh;
+        left: 18vw;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    .topImage{
+        height: 60vh;
+        background-position: left 0;
+    }
+
+    .topImage h1{
+        font-size: 4vw;
+        letter-spacing: 0.8em;
+        width: 80%;
+    }
+
+    .topImage h3{
+        font-size: 3vw;
+        letter-spacing: 0.8em;
+        left: 25%;
+    }
+    
+    .box{
+        width: 200px;
+        height: 200px;
+        margin: 30px;
+    }
+
+    .box img{
+        margin-top: 40px;
+    }
+
+    #img2{
+        margin-top: 20px;
+    }
+
+    .disease h1{
+        font-size: 23px;
+    }
+
+    .slideshow-container{
+        top: 8vh;
+        left: 5vw;
+        width: 90%;
+        margin-left: 0;
+        padding: 50px 0;
+    }
+
+    .dot-container{
+        top:8vh;
+        left: 5vw;
+        width: 90%;
+        margin-left:0;
+    }
+
+    .mySlides{
+        padding: 100px 25px;
+    }
+
+    
+    
+}

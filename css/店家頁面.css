@@ -1,0 +1,237 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    overflow: hidden;
+    height: auto;
+    background-image: url(.png);
+    background-size: cover;
+}
+
+header{
+    height: 80px;
+    background-color: antiquewhite; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#logo{
+    width: 10%;
+}
+
+section{
+    margin-top: 150px;
+}
+
+.top{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.image{
+    width: 500px;
+    flex: none;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(185, 185, 185, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+.texts{
+    width: 500px;
+    flex: none;
+    margin-left: 15%;
+    padding-top: 3%;
+}
+
+.texts a{
+    padding: 20px 50px;
+    background-color: rgb(190, 132, 132);
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.texts p{
+    color: #555;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.texts a:hover{
+    background-color:rgb(143, 99, 99) ;
+}
+
+/* -------------------------提供設備-------------------------- */
+
+.second{
+    width: 60%;
+    margin: 80px auto;
+    border: 2px dashed black;
+    height: 30vh;
+    display: flex;
+    flex-wrap:wrap ;
+    padding: 10px 0;
+}
+
+.second_left{
+    flex: none;
+}
+
+.second_right{
+    float: right;
+    height: 100%;
+    flex: none;
+}
+
+.second_right ul{
+    list-style-type: square;
+    display: inline-block;
+    padding: 0;
+}
+
+.second_right li{
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* -------------------------------------------------------------- */
+
+footer{
+    background-color: rgb(65, 56, 49);
+    color: white;
+    height: 200px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:80px ;
+}
+
+@media screen and(max-width:600px){
+    .image{
+        width: 300px;
+    }
+
+    .text{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .prev, .next,.text {font-size: 11px}
+
+    #logo{
+        width: 25%;
+    }
+
+    .top{
+        width: 100%;
+    }
+
+    .slideshow-container {
+        max-width: 300px;
+        margin: 0;
+    }
+    
+    .texts{
+        margin:0 auto;
+    }
+
+    .image{
+        width: 300px;
+        margin:0 auto;
+    }
+
+    .second{
+        width: 80%;
+        height: 40vh;
+    }
+    
+    .second_right li{
+        margin-top: 20px;
+    }
+
+  }
+
