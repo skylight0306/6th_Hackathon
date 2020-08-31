@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sky form</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/reservation.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a href="../index.html"><img src="../img/logo.png" width="10%" style="float: left;margin-top: 20px;margin-left: 40px;position: fixed;top: 0;left: 0;z-index: 1;"></a>
+
+    <h1>預訂表單</h1>
+
+      <form action="https://formspree.io/xbjzpbyl" method="POST">
+
+        <div class="form">
+
+          <div class="left">
+
+            <label><br>
+              你的姓名:
+              <input type="text" name="姓名">
+            </label><br><br>
+
+            <label>
+              電子郵件:
+              <input type="email" name="Email">
+            </label><br><br>
+
+            <label>
+              電話號碼:
+              <input type="text" name="電話號碼">
+            </label><br><br>
+
+            <lable>
+              14天內是否有國外旅遊史?
+              <input type="radio" name="14天內是否有國外旅遊史" value="Yes"> Yes
+              <input type="radio" name="14天內是否有國外旅遊史" value="NO"> No
+            </lable><br><br>
+
+            <lable>
+              14天內是否與有國外旅遊史的人接觸?
+              <input type="radio" name="14天內是否有接觸史" value="Yes"> Yes
+              <input type="radio" name="14天內是否有接觸史" value="NO"> No
+            </lable><br><br>
+
+            <lable>
+              14天內是否有發燒、咳嗽、全身痠痛?
+              <input type="radio" name="14天內是否有發燒、咳嗽、全身痠痛?" value="Yes"> Yes
+              <input type="radio" name="14天內是否有發燒、咳嗽、全身痠痛?" value="NO"> No
+            </lable><br><br>
+
+            <lable>
+              預估人數:
+              <select name="預估人數">
+
+                <option value="0~10人">1～10人</option>
+                <option value="11~20人">11～20人</option>
+                <option value="21~50人">21～50人</option>
+                <option value="51~100人">51～100人</option>
+                <option value="100人以上">100人以上</option>
+              </select>
+              </label><br><br>
+
+          </div>
+
+          <div class="right">
+
+              <label>
+                跟房東說些什麼:<br>
+                <textarea name="跟房東說些什麼" rows="10" cols="40"></textarea>
+              </label><br>
+
+              <label>
+                身分證照片雲端連結:<br>
+                <textarea name="card" rows="2" cols="40"></textarea>
+              </label><br><br>
+
+              <label>
+                預約日期:
+                <input type="date" name="預約日期" max="2030-01-01">
+              </label><br><br>
+
+              </label>
+              開始時間:
+              <input type="time" name="開始時間" min="06:00" max="24:00" required>
+            </lable><br><br>
+
+            </label>
+            結束時間:
+            <input type="time" name="結束時間" min="06:00" max="24:00" required>
+            </lable><br><br>
+
+          </div>
+
+        </div>
+
+        <div class="botton">
+
+            <label>
+              <p style="text-align: center;">
+                註:<br>
+                本資料僅作為租借場地資料之備份，<br>
+                絕不用於商業用途
+              </p>
+            </label>
+
+            <input type="submit" value="確認送出"><br>
+
+        </div>
+
+      </form>
+
+    
+
+  </div>
+
+  <footer>
+    <p>Copyright © 2020 沂嶺風潮 版權所有</p>
+</footer>
+
+</body>
+
+</html>
