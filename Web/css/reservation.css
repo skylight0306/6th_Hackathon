@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    overflow: hidden;
+    height: 1000px;
+    background-image: url(../img/paper.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom 100px;
+    padding-top: 100px;
+    margin:0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    width: 600px;
+    margin: 25px auto;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left{
+    width: 300px;
+    flex: none;
+}
+
+.right{
+    width: 300px;
+    flex: none;
+}
+
+.botton{
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.botton input{
+    position: absolute;
+    left: 38%;
+}
+
+footer{
+    background-color: rgb(65, 56, 49);
+    color: white;
+    height: 200px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:80px ;
+}
