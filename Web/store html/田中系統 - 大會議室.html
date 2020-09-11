@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>田中系統 - 大會議室</title>
+    <link rel="stylesheet" href="../css/店家頁面.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <a href="../index.html"><img src="../img/logo.png" width="10%" style="float: left;margin-top: 20px;margin-left: 40px;"></a>
+
+        </header>
+
+        <section>
+
+            <div class="top">
+
+                <div class="image">
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+
+                          <img src="../img/田中系統 - 大會議室1.jpg" style="width:100%">
+                        
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          
+                          <img src="../img/田中系統 - 大會議室2.jpg" style="width:100%">
+                          
+                        </div>
+
+                        <div class="mySlides fade">
+                          
+                          <img src="../img/田中系統 - 大會議室3.jpg" style="width:100%">
+                          
+                        </div>
+                        
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                        
+
+                    <!-- <div class="chart">
+
+                        <img src="../img/圓餅1.png" alt="" width="100%">
+                        <img id="img2" src="../img/圓餅2.png" alt="" width="100%" style="display: inline;">
+                        <img src="../img/圓餅3.png" alt="" width="100%">
+                        <img src="../img/圓餅4.png" alt="" width="100%">
+
+                    </div> -->
+                  
+                    <!-- <img src="../img/1.jpg" alt="" width="100%"> -->
+
+                    <h1 style="text-align: center;">田中系統 - 大會議室</h1>
+
+                </div>
+
+                <div class="texts">
+
+                    <img src="../img/home.png" alt="" width="5%">
+
+                    <span style="font-size:20px;">台北市信義區基隆路一段141號6樓6室<br><br>
+
+                    <img src="../img/person.png" alt="" width="5%">
+
+                    <span style="font-size:20px;">面積5坪，約可容納8人</span><br><br>
+
+                    <img src="../img/dis.png" alt="" width="5%">
+
+                    <span style="font-size:20px;">防疫期間約可容納5人</span><br><br><br>
+
+                    <p>$3150/3hr</p><br>
+
+                    <a href="../html/reservaiton.html">預訂連結</a>
+
+                </div>
+
+            </div>
+
+            <div class="second">
+
+                <div class="second_left col-4">
+
+                    <h3 style="margin-top: 20px;margin-left: 20px;width: 150px;">空間提供設備</h3>
+
+                </div>
+                
+                <div class="second_right col-8">
+
+                    <ul class="col-4">
+                        <li>桌子</li>
+                        <li>椅子</li>
+                        <li>冷氣</li>
+                        <li>電風扇</li>
+
+                    </ul>
+
+                    <ul class="col-4">
+                        <li>廁所</li>
+                        <li>廚房</li>
+                        <li>抹布</li>
+                        <li>拖把</li>
+
+                    </ul>
+
+                    <ul class="col-3">
+                        <li>酒精</li>
+                        <li>額溫槍</li>
+                        <li>衛生紙</li>
+                        <li>口罩</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Copyright © 2020 沂嶺風潮 版權所有</p>
+        </footer>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</body>
+</html>
